@@ -208,6 +208,19 @@ onUnmounted(() => {
           Contact Us
         </RouterLink>
 
+        <!-- LOGIN -->
+        <RouterLink
+          to="/login"
+          class="nav-login"
+          :class="{
+            active:
+              isPageActive('/login')
+          }"
+          @click="closeMenu"
+        >
+          Login
+        </RouterLink>
+
       </nav>
 
     </div>

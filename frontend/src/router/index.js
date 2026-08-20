@@ -4,33 +4,29 @@ import {
 } from 'vue-router'
 
 import Home from '../views/Home.vue'
+import Login from '../views/Login.vue'
+import Dashboard from '../views/Dashboard.vue'
+
 
 const routes = [
   {
     path: '/',
     name: 'home',
     component: Home
-  }
+  },
+  {
+  path: '/login',
+  name: 'login',
+  component: Login
+},
 
-  // Baad mein add karenge:
-  //
-  // {
-  //   path: '/gallery',
-  //   name: 'gallery',
-  //   component: () => import('../views/Gallery.vue')
-  // },
-  //
-  // {
-  //   path: '/packages',
-  //   name: 'packages',
-  //   component: () => import('../views/Packages.vue')
-  // },
-  //
-  // {
-  //   path: '/contact',
-  //   name: 'contact',
-  //   component: () => import('../views/Contact.vue')
-  // }
+ {
+    path: '/dashboard',
+    name: 'dashboard',
+    component: Dashboard
+  },
+
+
 ]
 
 const router = createRouter({
