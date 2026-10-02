@@ -1,0 +1,1818 @@
+/* ==============================
+   RH NEXUS CRM LAYOUT
+   ============================== */
+
+.rhnx-layout {
+  display: flex;
+
+  width: 100%;
+
+  height: 100vh;
+
+  overflow: hidden;
+
+  background: #070b09;
+
+  color: #ffffff;
+
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+}
+
+/* ==============================
+   SIDEBAR
+   ============================== */
+
+.rhnx-sidebar {
+  width: 260px;
+
+  height: 100vh;
+
+  flex-shrink: 0;
+
+  overflow: hidden;
+
+  background: #080d0b;
+
+  border-right: 1px solid #202821;
+
+  padding: 28px 18px;
+
+  display: flex;
+
+  flex-direction: column;
+}
+
+.rhnx-brand {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  padding: 5px;
+}
+
+.rhnx-logo {
+  width: 46px;
+
+  height: 46px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #a6ff00;
+
+  font-weight: 800;
+
+  border: 1px solid #9cff00;
+
+  background: rgba(156, 255, 0, 0.05);
+
+  box-shadow: 0 0 20px rgba(156, 255, 0, 0.12);
+}
+
+.rhnx-brand h3 {
+  margin: 0;
+
+  font-size: 18px;
+}
+
+.rhnx-brand span {
+  display: block;
+
+  margin-top: 3px;
+
+  font-size: 10px;
+
+  letter-spacing: 3px;
+
+  color: #7f8982;
+}
+
+.rhnx-workspace {
+  margin: 45px 0 15px;
+
+  font-size: 11px;
+
+  letter-spacing: 2px;
+
+  color: #68736c;
+}
+
+/* MENU */
+
+.rhnx-menu {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+
+  width: 100%;
+}
+
+.rhnx-menu a {
+  display: flex;
+
+  align-items: center;
+
+  width: 100%;
+
+  padding: 12px 14px;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  color: #9ca39e;
+
+  font-size: 15px;
+
+  font-weight: 500;
+
+  transition: 0.25s ease;
+
+  box-sizing: border-box;
+}
+
+.rhnx-menu a:hover {
+  background: rgba(156, 255, 0, 0.08);
+
+  color: #a6ff00;
+}
+
+.rhnx-menu a.active {
+  background: #1c2c0b;
+
+  border: 1px solid #547c12;
+
+  color: #a6ff00;
+}
+
+/* BOTTOM */
+
+.rhnx-bottom {
+  margin-top: auto;
+
+  border-top: 1px solid #202821;
+
+  padding-top: 18px;
+}
+
+.rhnx-bottom a,
+.rhnx-bottom button {
+  display: block;
+
+  width: 100%;
+
+  padding: 13px 15px;
+
+  border-radius: 12px;
+
+  background: none;
+
+  border: 0;
+
+  text-align: left;
+
+  text-decoration: none;
+
+  color: #9ca39e;
+
+  cursor: pointer;
+
+  font-size: 14px;
+}
+
+.rhnx-bottom a:hover,
+.rhnx-bottom button:hover {
+  background: rgba(255, 255, 255, 0.05);
+
+  color: white;
+}
+
+/* ==============================
+   MAIN
+   ============================== */
+
+.rhnx-main {
+  flex: 1;
+
+  min-width: 0;
+
+  height: 100vh;
+
+  overflow-y: auto;
+
+  overflow-x: hidden;
+}
+
+/* HEADER */
+
+.rhnx-header {
+  position: sticky;
+
+  top: 0;
+
+  z-index: 10;
+
+  height: 85px;
+
+  padding: 0 40px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+  background: #070b09;
+}
+
+.rhnx-header small {
+  color: #9cff00;
+
+  font-size: 11px;
+
+  letter-spacing: 2px;
+}
+
+.rhnx-header h2 {
+  margin: 6px 0 0;
+
+  font-size: 20px;
+}
+
+/* USER */
+
+.rhnx-user {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+.rhnx-user-circle {
+  width: 42px;
+
+  height: 42px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border: 1px solid #9cff00;
+
+  color: #a6ff00;
+
+  font-size: 13px;
+
+  font-weight: 700;
+}
+
+.rhnx-user span {
+  display: block;
+
+  color: #88958e;
+
+  font-size: 12px;
+}
+
+/* ==============================
+   CONTENT
+   ============================== */
+
+.rhnx-content {
+  width: 100%;
+
+  max-width: 1400px;
+
+  padding: 40px clamp(25px, 4vw, 60px);
+
+  box-sizing: border-box;
+}
+
+/* INTRO */
+
+.rhnx-intro {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 30px;
+
+  flex-wrap: wrap;
+}
+
+.rhnx-intro label {
+  color: #9cff00;
+
+  font-size: 12px;
+
+  letter-spacing: 2px;
+}
+
+.rhnx-intro h1 {
+  font-size: clamp(30px, 4vw, 45px);
+
+  margin: 15px 0;
+}
+
+.rhnx-intro p {
+  color: #84918b;
+}
+
+.rhnx-intro button {
+  padding: 14px 28px;
+
+  border-radius: 999px;
+
+  background: #a6ff00;
+
+  color: #071008;
+
+  border: none;
+
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition: 0.25s;
+}
+
+.rhnx-intro button:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 15px 35px rgba(156, 255, 0, 0.25);
+}
+
+/* CARDS */
+
+.rhnx-cards {
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: 18px;
+
+  width: 100%;
+
+  margin-top: 35px;
+}
+
+.rhnx-card,
+.rhnx-panel {
+  width: 100%;
+
+  max-width: 100%;
+
+  overflow: hidden;
+
+  background: linear-gradient(145deg, #121914, #0e140f);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  border-radius: 18px;
+
+  padding: 24px;
+
+  margin-top: 25px;
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.rhnx-card span {
+  color: #8b968f;
+
+  font-size: 13px;
+}
+
+.rhnx-card h2 {
+  font-size: 40px;
+
+  margin: 18px 0 8px;
+}
+
+.rhnx-card p {
+  color: #84918b;
+
+  font-size: 13px;
+}
+
+/* STATUS */
+
+.rhnx-status {
+  margin: 22px 0;
+}
+
+.rhnx-status b {
+  float: right;
+}
+
+.rhnx-status div {
+  height: 7px;
+
+  background: #263028;
+
+  border-radius: 20px;
+
+  margin-top: 10px;
+
+  overflow: hidden;
+}
+
+.rhnx-status i {
+  display: block;
+
+  height: 100%;
+
+  background: #9cff00;
+}
+
+/* EVENTS */
+
+.rhnx-event {
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  flex-wrap: wrap;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+  padding-top: 20px;
+}
+
+.rhnx-event-logo {
+  width: 45px;
+
+  height: 45px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: #253d13;
+
+  color: #9cff00;
+
+  font-weight: bold;
+}
+
+.rhnx-date {
+  margin-left: auto;
+
+  color: #88958e;
+}
+
+.rhnx-badge {
+  padding: 7px 15px;
+
+  border-radius: 999px;
+
+  color: #9cff00;
+
+  border: 1px solid #6c9c18;
+}
+
+/* ==============================
+   RESPONSIVE
+   ============================== */
+
+@media (max-width: 1100px) {
+  .rhnx-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 800px) {
+  .rhnx-sidebar {
+    display: none;
+  }
+
+  .rhnx-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .rhnx-header {
+    padding: 0 20px;
+  }
+}
+
+/* ==========================================
+   FINAL RH NEXUS CRM OVERFLOW FIX
+========================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* MAIN WRAPPER */
+
+.rhnx-layout {
+  width: 100%;
+  max-width: 100vw;
+
+  height: 100vh;
+
+  display: flex;
+
+  overflow: hidden;
+}
+
+/* SIDEBAR */
+
+.rhnx-sidebar {
+  width: 260px;
+
+  min-width: 260px;
+
+  height: 100vh;
+
+  flex: 0 0 260px;
+
+  overflow: hidden;
+}
+
+/* MAIN RIGHT AREA */
+
+.rhnx-main {
+  flex: 1;
+
+  min-width: 0;
+
+  width: calc(100% - 260px);
+
+  height: 100vh;
+
+  overflow-y: auto;
+
+  overflow-x: hidden;
+}
+
+/* HEADER */
+
+.rhnx-header {
+  width: 100%;
+
+  height: 85px;
+}
+
+/* CONTENT */
+
+.rhnx-content {
+  width: 100%;
+
+  max-width: none;
+
+  padding: 40px;
+
+  overflow: hidden;
+}
+
+/* INTRO */
+
+.rhnx-intro {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 20px;
+}
+
+/* CARDS */
+
+.rhnx-cards {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: 18px;
+}
+
+.rhnx-card {
+  min-width: 0;
+
+  overflow: hidden;
+}
+
+/* PANELS */
+
+.rhnx-panel {
+  width: 100%;
+
+  overflow: hidden;
+}
+
+/* STATUS BAR */
+
+.rhnx-status div {
+  width: 100%;
+}
+
+/* EVENT ROW */
+
+.rhnx-event {
+  width: 100%;
+
+  overflow: hidden;
+}
+
+.rhnx-date {
+  white-space: nowrap;
+}
+
+/* BUTTON FIX */
+
+.rhnx-intro button {
+  flex-shrink: 0;
+
+  white-space: nowrap;
+}
+
+/* GLOBAL CSS CONFLICT FIX */
+
+.rhnx-layout label {
+  display: block;
+}
+
+.rhnx-layout a {
+  text-decoration: none;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1200px) {
+  .rhnx-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 800px) {
+  .rhnx-sidebar {
+    display: none;
+  }
+
+  .rhnx-main {
+    width: 100%;
+  }
+
+  .rhnx-content {
+    padding: 25px 20px;
+  }
+
+  .rhnx-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .rhnx-intro {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+}
+
+
+/* ==========================================
+   RH NEXUS CRM FINAL FIX PATCH
+   (DO NOT REMOVE OLD CSS)
+========================================== */
+
+
+/* Remove browser/body scrolling */
+
+
+
+
+/* Main wrapper */
+
+.rhnx-layout {
+
+    height:100vh;
+
+    width:100vw;
+
+    overflow:hidden;
+
+    display:flex;
+
+}
+
+
+
+/* Sidebar fixed */
+
+.rhnx-sidebar {
+
+    height:100vh;
+
+    flex:0 0 260px;
+
+    overflow:hidden;
+
+}
+
+
+
+/* Only right content scroll */
+
+.rhnx-main {
+
+    height:100vh;
+
+    flex:1;
+
+    min-width:0;
+
+    overflow-y:auto;
+
+    overflow-x:hidden;
+
+}
+
+
+
+/* Prevent content cut */
+
+.rhnx-content {
+
+    width:100%;
+
+    max-width:none;
+
+    box-sizing:border-box;
+
+}
+
+
+
+/* Remove horizontal overflow */
+
+.rhnx-card,
+.rhnx-panel {
+
+    max-width:100%;
+
+    box-sizing:border-box;
+
+}
+
+
+
+/* scrollbar only on right */
+
+.rhnx-main::-webkit-scrollbar {
+
+    width:8px;
+
+}
+
+
+.rhnx-main::-webkit-scrollbar-track {
+
+    background:#070b09;
+
+}
+
+/* ================================
+   CRM SINGLE SCROLL FIX
+================================ */
+
+
+
+.rhnx-layout {
+    height:100vh;
+    width:100%;
+    overflow:hidden !important;
+}
+
+
+.rhnx-main {
+    height:100vh !important;
+    overflow-y:auto !important;
+    overflow-x:hidden !important;
+    min-height:0;
+}
+
+
+.rhnx-content {
+    min-height:0;
+}
+
+/* ==========================================
+   SAFE CRM SCROLL FIX
+   DOES NOT CHANGE EXISTING DESIGN
+========================================== */
+
+
+/* browser scroll remove */
+
+
+
+/* main wrapper */
+
+.rhnx-layout {
+
+    height:100vh;
+
+    width:100%;
+
+    display:flex;
+
+    overflow:hidden;
+
+}
+
+
+
+
+
+/* sidebar fixed */
+
+.rhnx-sidebar {
+
+    flex:0 0 260px;
+
+    height:100vh;
+
+    overflow:hidden;
+
+}
+
+
+
+
+
+/* only content area scroll */
+
+.rhnx-main {
+
+    flex:1;
+
+    min-width:0;
+
+    height:100vh;
+
+    overflow-y:auto;
+
+    overflow-x:hidden;
+
+}
+
+
+
+
+
+/* keep content width */
+
+.rhnx-content {
+
+    width:100%;
+
+    box-sizing:border-box;
+
+}
+
+
+
+
+
+/* scrollbar styling only */
+
+.rhnx-main::-webkit-scrollbar {
+
+    width:8px;
+
+}
+
+
+.rhnx-main::-webkit-scrollbar-track {
+
+    background:#070b09;
+
+}
+
+
+.rhnx-main::-webkit-scrollbar-thumb {
+
+    background:#263028;
+
+    border-radius:20px;
+
+}
+
+/* =================================
+   RH NEXUS CRM EVENTS PAGE
+================================= */
+
+
+.crm-events-page {
+    width:100%;
+}
+
+
+/* TOP SECTION */
+
+.crm-events-top {
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    gap:30px;
+
+    margin-bottom:35px;
+
+}
+
+
+.crm-events-top label {
+
+    color:#9cff00;
+
+    font-size:12px;
+
+    letter-spacing:2px;
+
+    font-weight:600;
+
+}
+
+
+
+.crm-events-top h1 {
+
+    margin:12px 0;
+
+    font-size:48px;
+
+    line-height:1.1;
+
+    color:#ffffff;
+
+    font-weight:700;
+
+}
+
+
+
+.crm-events-top p {
+
+    margin:0;
+
+    color:#89958d;
+
+    font-size:16px;
+
+}
+
+
+
+
+
+/* CREATE BUTTON */
+
+
+.crm-add-event {
+
+
+    background:#9cff00;
+
+    color:#071008;
+
+    border:none;
+
+    padding:14px 25px;
+
+    border-radius:8px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+
+}
+
+
+.crm-add-event:hover {
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 25px rgba(156,255,0,.25);
+
+}
+
+
+
+
+
+
+
+/* FILTERS */
+
+
+.crm-events-filter {
+
+
+    display:flex;
+
+    gap:10px;
+
+    margin-bottom:35px;
+
+
+}
+
+
+
+.crm-events-filter button {
+
+
+    background:#111812;
+
+    color:#9ca39e;
+
+    border:1px solid #263028;
+
+    padding:10px 20px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+
+}
+
+
+
+.crm-events-filter button:hover,
+.crm-events-filter button.active {
+
+
+    background:#263d12;
+
+    color:#9cff00;
+
+    border-color:#547c12;
+
+
+}
+
+
+
+
+
+
+
+
+/* GRID */
+
+
+.crm-events-grid {
+
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(3,minmax(0,1fr));
+
+
+    gap:22px;
+
+
+}
+
+
+
+
+
+
+
+/* CARD */
+
+
+.crm-event-card {
+
+
+    background:
+
+    linear-gradient(
+        145deg,
+        #121914,
+        #0c110d
+    );
+
+
+    border:1px solid rgba(255,255,255,.08);
+
+
+    border-radius:18px;
+
+
+    padding:25px;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.crm-event-card:hover {
+
+
+    transform:translateY(-5px);
+
+
+    border-color:#547c12;
+
+
+}
+
+
+
+
+
+
+/* CARD HEADER */
+
+
+.crm-event-header {
+
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+
+}
+
+
+
+.crm-event-icon {
+
+
+    width:50px;
+
+    height:50px;
+
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+
+    border-radius:12px;
+
+
+    background:#243c12;
+
+
+    color:#9cff00;
+
+
+    font-size:20px;
+
+    font-weight:800;
+
+
+}
+
+
+
+
+
+
+
+/* STATUS */
+
+
+.crm-status {
+
+
+    padding:7px 14px;
+
+    border-radius:20px;
+
+
+    font-size:12px;
+
+    font-weight:700;
+
+
+}
+
+
+
+.crm-status.planned {
+
+
+    color:#9cff00;
+
+    background:rgba(156,255,0,.1);
+
+
+}
+
+
+
+.crm-status.ongoing {
+
+
+    color:#ffc107;
+
+    background:rgba(255,193,7,.12);
+
+
+}
+
+
+
+.crm-status.completed {
+
+
+    color:#4ade80;
+
+    background:rgba(74,222,128,.12);
+
+
+}
+
+
+
+
+
+
+
+/* TITLE */
+
+
+.crm-event-card h2 {
+
+
+    margin:25px 0 15px;
+
+
+    font-size:24px;
+
+
+    color:white;
+
+
+}
+
+
+
+
+.crm-event-card p {
+
+
+    margin:8px 0;
+
+
+    color:#89958d;
+
+
+    font-size:14px;
+
+
+}
+
+
+
+
+
+
+
+/* STAGE */
+
+
+.crm-stage {
+
+
+    margin-top:25px;
+
+
+}
+
+
+
+.crm-stage > div:first-child {
+
+
+    display:flex;
+
+    justify-content:space-between;
+
+
+    color:#9ca39e;
+
+
+}
+
+
+
+.crm-stage b {
+
+    color:#9cff00;
+
+}
+
+
+
+
+.crm-progress {
+
+
+    margin-top:12px;
+
+
+    height:7px;
+
+
+    background:#263028;
+
+
+    border-radius:20px;
+
+
+    overflow:hidden;
+
+
+}
+
+
+
+.crm-progress span {
+
+
+    display:block;
+
+    height:100%;
+
+
+    background:#9cff00;
+
+
+}
+
+
+
+
+
+
+
+
+/* BUTTON */
+
+
+.crm-view-btn {
+
+
+    margin-top:25px;
+
+
+    width:100%;
+
+
+    padding:12px;
+
+
+    background:transparent;
+
+
+    border:1px solid #547c12;
+
+
+    color:#9cff00;
+
+
+    border-radius:8px;
+
+
+    font-weight:600;
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+.crm-view-btn:hover {
+
+
+    background:#263d12;
+
+
+}
+
+
+
+
+
+
+
+/* RESPONSIVE */
+
+
+@media(max-width:1200px){
+
+
+.crm-events-grid {
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+}
+
+
+
+@media(max-width:700px){
+
+
+.crm-events-top {
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+}
+
+
+.crm-events-grid {
+
+    grid-template-columns:1fr;
+
+}
+
+
+.crm-events-filter {
+
+    flex-wrap:wrap;
+
+}
+
+
+}
+
+
+
+/* =========================
+   CREATE EVENT MODAL
+   ========================= */
+
+.crm-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  z-index: 9999;
+}
+
+.crm-modal {
+  width: 100%;
+  max-width: 650px;
+  max-height: 90vh;
+  overflow-y: auto;
+
+  /* scrollbar visually hide */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  background: #080d0a;
+  border: 1px solid #2b382d;
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 20px 70px rgba(0, 0, 0, 0.6);
+}
+
+.crm-modal::-webkit-scrollbar {
+  display: none;
+}
+
+.crm-modal::-webkit-scrollbar {
+  display: none;
+}
+
+.crm-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+
+.crm-modal-header h2 {
+  margin: 6px 0 0;
+  font-size: 25px;
+}
+
+.crm-modal-close {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #344137;
+  background: #172019;
+  color: #9ca39e;
+  border-radius: 6px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.crm-modal-close:hover {
+  color: #9cff00;
+  border-color: #6c9c18;
+}
+
+/* Form */
+
+.crm-form-group {
+  margin-bottom: 18px;
+}
+
+.crm-form-group > label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 13px;
+  color: #b7c0ba;
+}
+
+.crm-form-group input,
+.crm-form-group select,
+.crm-form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: #0b100d;
+  border: 1px solid #2b382d;
+  border-radius: 6px;
+  color: #fff;
+  padding: 12px 13px;
+  font-size: 14px;
+  outline: none;
+}
+
+.crm-form-group input:focus,
+.crm-form-group select:focus,
+.crm-form-group textarea:focus {
+  border-color: #8bcf16;
+  box-shadow: 0 0 0 2px rgba(156, 255, 0, 0.08);
+}
+
+.crm-form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.crm-form-group select option {
+  background: #111914;
+  color: #fff;
+}
+
+/* Two columns */
+
+.crm-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+/* Modal buttons */
+
+.crm-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid #27332c;
+}
+
+.crm-cancel-btn,
+.crm-save-btn {
+  padding: 11px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.crm-cancel-btn {
+  background: transparent;
+  border: 1px solid #344137;
+  color: #aab3ad;
+}
+
+.crm-cancel-btn:hover {
+  border-color: #66736a;
+  color: #fff;
+}
+
+.crm-save-btn {
+  background: #a6ff00;
+  border: 1px solid #a6ff00;
+  color: #071000;
+}
+
+.crm-save-btn:hover {
+  background: #b5ff33;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+  .crm-modal-overlay {
+    padding: 15px;
+  }
+
+  .crm-modal {
+    padding: 20px;
+  }
+
+  .crm-form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
+/* =====================================
+   RH NEXUS CRM ISOLATED SCROLL SYSTEM
+   Does not affect public website
+===================================== */
+
+
+/* CRM wrapper only */
+
+.rhnx-layout {
+
+    width:100%;
+
+    height:100vh;
+
+    display:flex;
+
+    overflow:hidden;
+
+    background:#070b09;
+
+}
+
+
+
+/* Sidebar fixed */
+
+.rhnx-sidebar {
+
+    height:100vh;
+
+    flex:0 0 260px;
+
+    overflow:hidden;
+
+}
+
+
+
+/* CRM content scroll only */
+
+.rhnx-main {
+
+    flex:1;
+
+    min-width:0;
+
+    height:100vh;
+
+    overflow-y:auto;
+
+    overflow-x:hidden;
+
+}
+
+
+
+/* CRM scrollbar */
+
+.rhnx-main::-webkit-scrollbar {
+
+    width:8px;
+
+}
+
+
+.rhnx-main::-webkit-scrollbar-track {
+
+    background:#070b09;
+
+}
+
+
+.rhnx-main::-webkit-scrollbar-thumb {
+
+    background:#263028;
+
+    border-radius:20px;
+
+}
+
+
+
+/* CRM content */
+
+.rhnx-content {
+
+    width:100%;
+
+    box-sizing:border-box;
+
+}
+
+
+
+/* Prevent website CSS conflict */
+
+.rhnx-layout h1,
+.rhnx-layout h2,
+.rhnx-layout h3,
+.rhnx-layout p,
+.rhnx-layout button,
+.rhnx-layout label {
+
+    font-family:
+    Inter,
+    "Segoe UI",
+    Arial,
+    sans-serif;
+
+}
+
+
+
+.rhnx-layout button {
+
+    text-transform:none;
+
+}
+
+
+
+@media(max-width:800px){
+
+
+    .rhnx-sidebar {
+
+        display:none;
+
+    }
+
+
+    .rhnx-main {
+
+        width:100%;
+
+    }
+
+}
