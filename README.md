@@ -1,6 +1,4 @@
 <div align="center">
-  <img src="website/public/assets/images/company-logo.jpeg" alt="RH Nexus Events" width="112" />
-
   <h1>RH Nexus Events</h1>
 
   <p><strong>Public Website & Event Management CRM</strong></p>
